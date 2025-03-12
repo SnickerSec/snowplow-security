@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/" # Adjust if your Python code is in a subdirectory
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/" # Adjust if your JavaScript code is in a subdirectory
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "maven" #If maven is used within the scala project.
+    directory: "/" # Adjust if your maven files are in a subdirectory.
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "gradle" #If gradle is used within the scala project.
+    directory: "/" # adjust if your gradle files are in a subdirectory.
+    schedule:
+      interval: "weekly"
